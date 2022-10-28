@@ -1,0 +1,243 @@
+/* .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3e3e3e;
+    
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
+
+.footer{
+        /* background-image: url(./images/logo_3-removebg-preview.png); */
+    display: flex;
+    width: 100%;
+    /* background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat; */
+        /* opacity:0.1; */
+}
+.all_rights{
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    display: flex;
+
+}
+.all_rights .condition{
+    text-align: left;
+
+}
+.solutions{
+    width: 20%;
+    text-align: left;
+    /* background-color: palegoldenrod; */
+    height: 70vh;
+    margin-left: 1%;
+}
+
+.solutions h3{
+    /* color: #97B1B3; */
+    color: #97B1B3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 30%;
+  font-size:medium;
+  font-family: 'Nunito', sans-serif;
+
+
+}
+.solutions p{
+    color: #b5b6b3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 30%;
+    font-size: small;
+    font-family: 'Nunito', sans-serif;
+
+}
+.solutions li {
+    margin-bottom: 8%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+
+}
+.solutions a {
+    color:#292a2d;
+    font-family: 'Nunito', sans-serif;
+
+}
+.solutions a:hover {
+    padding-bottom: 1px ;
+    border-bottom: 1px solid#292a2d;
+    
+}
+.Tools{
+    width: 20%;
+    text-align: left;
+    /* background-color: aliceblue; */
+    height: 70vh;
+
+}
+
+.Tools h3{
+    color: #97B1B3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.Tools li {
+    margin-bottom: 8%;
+    margin-left: 29%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.Tools a {
+    color:#292a2d;
+    font-family: 'Nunito', sans-serif;
+
+}
+.Tools a:hover {
+    padding-bottom: 1px ;
+    border-bottom: 1px solid#292a2d;
+    
+}
+.Learn{
+    width: 20%;
+    text-align: left;
+    /* background-color: purple; */
+    height: 50vh;
+
+}
+
+.Learn h3{
+    color: #97B1B3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.Learn li {
+    margin-bottom: 8%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.Learn a {
+    color:#292a2d;
+    font-family: 'Nunito', sans-serif;
+
+}
+.Learn a:hover {
+    padding-bottom: 1px ;
+    border-bottom: 1px solid#292a2d;
+    
+}
+
+.About-Us{
+    width: 20%;
+    text-align: left;
+    /* background-color: rgb(0, 128, 11); */
+    height: 50vh;
+}
+
+.About-Us h3{
+    color: #97B1B3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.About-Us li {
+    margin-bottom: 8%;
+    margin-left: 30%;
+    font-size:medium;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.About-Us a {
+    color:#292a2d;
+    font-family: 'Nunito', sans-serif;
+
+}
+.About-Us a:hover {
+    padding-bottom: 1px ;
+    border-bottom: 1px solid#292a2d;
+    
+}
+
+.icons{
+    width: 20%;
+    text-align: left;
+    /* background-color: rgb(117, 128, 0); */
+    height: 50vh;
+}
+
+.icons h3{
+    color: #97B1B3;
+    margin-top: 22%;
+    margin-bottom: 12%;
+    margin-left: 1%;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.icons .icon{
+    margin-top: 23%;
+    margin-left: 15%;
+    margin-bottom: 11%;
+    color: #97B1B3;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.icons li {
+    margin-bottom: 8%;
+    font-weight: 400;
+    font-size: small;
+    margin-left: 35%;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+.icons a {
+    color:#adb2b7;
+    font-family: 'Nunito', sans-serif;
+
+
+    
+}
+.icon .twitter{
+    margin-left: 20%;
+}
+.icon .facebook{
+    margin-left: 11%;
+}
+.icon .Linkedin{
+margin-left: 10%;
+}
+.icons a:hover {
+    padding-bottom: 1px ;
+    border-bottom: 1px solid#adb2b7;
+
+}

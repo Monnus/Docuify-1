@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
+
+.aboutUs{
+    background-color: #F7F6F2;
+    height: 65vh;
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+}
+
+
+.aboutUs .employees{
+    /* background-color: yellow; */
+    height: 60vh;
+    width: 60%;
+}
+
+.employees .employer{
+    width: 84%;
+    height: 104%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.aboutUs .story{
+    /* background-color: blue; */
+    height: 60vh;
+    width: 50%;
+    
+}
+
+.story h6{
+    color: #74736d;
+    margin-top: 25%;
+    margin-left: 10%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.story h1{
+    color: #463f3c;
+    margin-left: 10%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.story p{
+    color: #463f3c;
+    margin-left: 10%;
+    font-family: 'Nunito', sans-serif;
+
+}
+.talk{
+    padding: 17px 20px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    background-color: #463f3c;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 23%;
+    margin-top: 4%;
+    margin-left: 10%;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.talk:hover{
+    border: 1px solid #d1cfc8;
+    background-color: white;
+    color: #463f3c;
+
+}
+
+
+/* mission */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
+
+.mission{
+    /* background-color: #F7F6F2; */
+    height: 70vh;
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 7%;
+    background-color: #F7F6F2;
+
+}
+
+
+.mission .our-mission{
+    /* background-color: yellow; */
+    height: 70vh;
+    width: 60%;
+  
+}
+
+.our-mission h6{
+    margin-left: 8%;
+    margin-top: 20%;
+    font-family: 'Nunito', sans-serif;
+    color: #463f3c;
+
+}
+.our-mission h1{
+    margin-left: 8%;
+    margin-top: 2%;
+    font-family: 'Nunito', sans-serif;
+    color: #463f3c;
+
+}
+.our-mission p{
+    margin-left: 8%;
+    margin-top: 2%;
+    font-family: 'Nunito', sans-serif;
+    color: #463f3c;
+
+}
+
+.mission .mission-img{
+    height: 70vh;
+    width: 50%;
+    /* background-color: blue; */
+}
+.mission-img .guy{
+    width: 85%;
+    height: 88%;
+    margin-left: 12%;
+    margin-top: 8%;
+}
