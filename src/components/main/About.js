@@ -3,6 +3,8 @@ import employees from '../../../src/assets/images/960x0.jpeg';
 import '../main/About.css';
 import {useNavigate} from 'react-router';
 import guy from '../../../src/assets/images/text-messaging-handsome-young-african-man-using-smart-phone-while-standing-against-grey-background_425904-39398.jpeg';
+import Header from '../menu/Header';
+import Footer from '../menu/Footer';
 
 
 
@@ -32,7 +34,8 @@ export default class About extends Component {
 		// 		<li><p>Once a verifier verifies the document, he gets ethers in reward.</p></li>
 		// 		</ul>
 		// 	</div>
-
+<div>
+<Header/>
 		<div>
 				<div className='aboutUs'>
 
@@ -74,7 +77,8 @@ export default class About extends Component {
 
 
 </div>
-
+<Footer/>
+</div>
 
 
 	  );
