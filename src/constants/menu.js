@@ -70,6 +70,11 @@ const privateMenu = {
       label: 'Transactions',
       menu: true
     },
+    dashboard:{
+      url:"/dashboard",
+      label:"Dashboard",
+      menu:true
+    },
     logout: {
       url: '/logout',
       label: 'Log Out',

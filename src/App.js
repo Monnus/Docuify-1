@@ -42,9 +42,9 @@ export default class App extends Component {
     return (
       <Router>
         <div className="body">
-            <Header/>
+     
             <Routes menu={this.state.routes}/>
-            <Footer/>
+       
         </div>
       </Router>
     );

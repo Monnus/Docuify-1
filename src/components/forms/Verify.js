@@ -5,6 +5,8 @@ import web3 from '../../constants/web3';
 import Loader from '../common/Loader';
 import {getDocument} from "../../redux/actions/documents";
 import accountsConst from "../../constants/accounts";
+import Header from '../menu/Header';
+import Footer from '../menu/Footer';
 
 @connect((store) => {
   return {
@@ -56,6 +58,10 @@ export default class Verify extends Component {
     if(this.props.user.loading)
       return (<Loader/>);
     return (
+      <div>
+<Header/>
+
+
       <div className='container'>
         <div className='row  align-center'>
           <div className='col-12'>
@@ -125,6 +131,7 @@ export default class Verify extends Component {
             <p className='error-msg'> Invalid document address !!! </p>
           </div>
         )}
+      </div>
       </div>
     );
   }

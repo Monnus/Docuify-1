@@ -10,6 +10,8 @@ import equity from '../../../src/assets/images/d6e7c66584a49398201d2cebfef8c39b5
 import man from '../../../src/assets/images/85fc19315ea2838b6faa5d6087a859d00c56498b-1314x1180.webp';
 
 import video from '../../../src/assets/images/1_UINAsA-ZAG8UBYKhENkWiw.gif';
+import Header from '../menu/Header';
+import Footer from '../menu/Footer';
 
 
 export default class Home extends Component {
@@ -18,6 +20,8 @@ export default class Home extends Component {
   }
     render() {
         return (
+          <div>
+          <Header/>
           <div className='main'>
         <div className='hero'>
         <div className='content'>
@@ -154,6 +158,8 @@ export default class Home extends Component {
             </div>
         </div>
     </div>  
+    </div>
+    <Footer/>
     </div>
         );
     }

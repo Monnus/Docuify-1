@@ -5,6 +5,8 @@ import menu from '../../constants/menu';
 import web3 from '../../constants/web3';
 import Loader from '../common/Loader';
 import { auth } from '../../redux/actions/user';
+import Header from '../menu/Header';
+import Footer from '../menu/Footer';
 
 @connect((store) => {
   return {
@@ -53,6 +55,8 @@ console.log(this.state.accounts)
     if(this.state.redirect)
       return (<Redirect to={this.state.home}/>);
     return (
+      <div>
+        <Header/>
       <div className='container align-center'>
         <div className='row'>
           <div className='col-12'>
@@ -76,6 +80,8 @@ console.log(this.state.accounts)
           </div>
         </div>
       </div>
+      </div>
+
     );
   }
 
