@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
 
-body{
+html,body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,23 +12,27 @@ body{
    padding: 0px;
    margin: 0px;
 
-
+height:100%;
 
 }
 
 .pageGrid{
     display:grid;
-    flex-shrink: 1;
-    grid-template-columns:20% 50% 20%;
+    position:fixed;
+   top:0;
+   right:0;
+   bottom:0;
+   left:0;
+    grid-template-columns:300px 55% auto;
     gap:30px;
     
     grid-template-areas: 
 "nav  header TimeTable "
 "nav main TimeTable"
 "nav main TimeTable";
-height: 65hv;
+min-height:95vh;
 width:100%;
-min-height:100vh
+
 }
 .table{
     border-spacing: 20px;
@@ -42,13 +46,14 @@ grid-area:nav;
 line-height: 1.5rem;
 color:#793280;
 
+
 }
 .grayLine{
     position: absolute;
-    height: 40rem;
+    height: 50rem;
     width:0.2rem;
     background:lightgray;
-    top :40px;
+    top :70px;
     right:-1rem
 }
 .item1::after{
@@ -64,12 +69,14 @@ color:#793280;
 .item1 li{
 display:flex;
 justify-content: center;
+text-align: center;
 height:100%;
 }
 .item1 li span{
+    width:30%;
     font-size: medium;
     font-weight: 500;
-margin: 0 0 0 10px;
+margin: 0 0 0 1px;
 }
 
 .Icon-Image{
@@ -87,8 +94,8 @@ margin: 0 0 0 10px;
 
 .item2{
     display:flex;
-    grid-area: header;
-
+    grid-area:header;
+    background-color: red;
     height: auto;
 }
 
@@ -167,7 +174,7 @@ justify-content: space-between;
 .item4{
     grid-area:TimeTable;
     background: rgba(252,245,235);
-
+ padding-bottom: 20px;
     color:#793280
 
 
@@ -177,7 +184,7 @@ justify-content: space-between;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    padding:3rem 0;
+    padding:1.5rem 0;
 
 }
 .task-for-today{

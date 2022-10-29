@@ -57,22 +57,22 @@ const CalenderBox = ({handleCalander,minusDays,todosCalanders}) => {
     <div style={{height:"auto"}}>
     <div  style={{display:"flex", position:"relative",
     justifyContent:"space-evenly", alignItems:"center",fontSize:"1.1rem"}}>
-      <h5>{handleCalander(minusDays)}</h5>
+      <h6>{handleCalander(minusDays)}</h6>
    <img src={ecllipsis} style={{width:"1rem",height:"1rem"}}/>
      
       </div>
     <div style={{height:"auto",textAlign:"center"}}>
       {/*to does goes here */}
 
-      {todosCalanders.map(item=>{
+      {todosCalanders.map((item,i)=>{
         return(
       
-            <div style={{display:"flex",color:"gray",padding:"0 0 0 25px",height:"auto",marginBottom:"5px"}}>
-                <h4 style={{color:"rgba(121,50,128)"}}>{item.time}</h4>
+            <div style={{display:"flex",color:"gray",padding:"0 0 0 25px",justifyContent:"space-around",height:"auto",marginBottom:"5px"}}>
+                <h6 style={{color:"rgba(121,50,128)",fontWeight:"bolder"}}>{item.time}</h6>
                 {/* Line */}
-                <div style={{height:"auto",width:"0.5rem",background:colors[0]}}></div>
+                <div style={{height:"auto",width:"0.3rem",background:colors[i]}}></div>
                 <div style={{height:"auto",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                <h4 style={{color:"lightgray"}}>{item.title}</h4>
+                <h5 style={{color:"lightgray"}}>{item.title}</h5>
                 <h4 style={{fontSize:"1rem",alignSelf:"end"}}>{item.description}</h4>
                 </div>
             </div>

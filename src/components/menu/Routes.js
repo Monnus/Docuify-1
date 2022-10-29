@@ -13,7 +13,7 @@ import LogOut from '../account/LogOut';
 import Transactions from '../account/Transactions';
 import Profile from '../account/Profile';
 import AuthRoute from '../../utils/AuthRoute';
-import DashBoardPage from "../main/dashBoard/dashboard"
+import Dashboard from "../main/dashBoard/dashboard"
 export default class Routes extends Component{
 
   constructor(props) {
@@ -28,7 +28,7 @@ export default class Routes extends Component{
           <Route path={this.props.menu.home.url} exact component={Home} />
           <Route path={this.props.menu.about.url} exact component={About} />
           <Route path={this.props.menu.verify.url} exact component={Verify} />
-          <Route path={this.props.menu.dashboard.url} exact component={DashBoardPage}/>
+          <Route path={this.props.menu.dashboard.url} exact component={Dashboard}/>
            <Route path={this.props.menu.login.url} exact component={Login} />
           <AuthRoute path={this.props.menu.documents.url} exact component={Documents} />
           <AuthRoute path={this.props.menu.documentsRequester.url} exact component={RequesterDocuments} />

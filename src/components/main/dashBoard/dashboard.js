@@ -14,39 +14,48 @@ import settings from "../../../assets/images/cog-solid.svg";
 import search from "../../../assets/images/search-solid.svg"
 import homefrom from "../../../assets/images/home-solid.svg"
 import info  from "../../../assets/images/info-circle-solid.svg"
-const DashBoardPage = () => {
-  const [loggInState,setloggInState]=useState(false);
 
-  const [selectFile,setSelectFile]=useState([]);
-const todosCalanders=[[
-  {time:"10:00",title:"Dribble shot",description:"facebook Brand"},
-{time:"13:20",title:"Design",description:"Task Managment"}],
-[{time:"10:00",title:"UX Research",description:"Sleep App"},
-{time:"13:20",title:"Design",description:"Task Managment"},
-{time:"10:00",title:"dribble Shot",description:"Meet up"}],
-[{time:"10:00",title:"Dribble shot",description:"Meet up"},
-{time:"11:00",title:"design",description:"Mobile App"}
-]]
+export default class componentName extends React.Component {
+
+constructor(props){
+  super(props);
+  this.state={
+todosCalanders:[[
+      {time:"10:00",title:"Dribble shot",description:"facebook Brand"},
+      {time:"13:20",title:"Design",description:"Task Managment"}],
+      [{time:"10:00",title:"UX Research",description:"Sleep App"},
+      {time:"13:20",title:"Design",description:"Task Managment"},
+      {time:"10:00",title:"dribble Shot",description:"Meet up"}],
+      [{time:"10:00",title:"Dribble shot",description:"Meet up"},
+      {time:"11:00",title:"design",description:"Mobile App"}
+    ]]
+  }
+}
+
+
+ todosCalanders
   
-  const handleCalander=(minusDays=0)=>{
-    const selectMonth = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
+handleCalander=(minusDays=0)=>{
+  const selectMonth = ["Jan","Feb","Mar","Apr","May","June","July","Aug","Sep","Oct","Nov","Dec"];
 
-  const date=new Date();
-  //get day of the month
-  const day=date.getDate();
-  const week=date.getDay();
-  const year=date.getFullYear();
-  const month=selectMonth[date.getMonth()];
-  return ` ${month} ${(day-minusDays)}, ${year}`;
-};
-handleCalander();
-
+const date=new Date();
+//get day of the month
+const day=date.getDate();
+const week=date.getDay();
+const year=date.getFullYear();
+const month=selectMonth[date.getMonth()];
+return ` ${month} ${(day-minusDays)}, ${year}`;
+}
 
 
 
+
+
+render(){
 
 
 return (
+
   <div className='pageGrid'>
       <div className='item1' >
       <div style={{textAlign:"center",alignSelf:"center"}}>
@@ -67,17 +76,17 @@ return (
 <div className='Link'>
 <nav style={{marginTop:"5rem"}}>
 <ul>
-<li><img src={homefrom} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Home</span></li>
+<li><a href='/' style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={homefrom} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Home</span></a></li>
 <br/>
-<li><img src={info} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>About </span></li>
+<li><a href='/about'style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={info} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>About </span></a></li>
 <br/>
-<li><img src={profile} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Profile</span></li>
+<li><a href='/profile' style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={profile} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Profile</span></a></li>
 <br/>
-<li><img src={contactUs} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>contact Us</span></li>
+<li><a href='/contactus' style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={contactUs} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>contact Us</span></a></li>
 <br/>
-<li><img src={verify} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Verify</span></li>
+<li><a href='/verify'style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={verify} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>Verify</span></a></li>
 <br/>
-<li><img src={settings} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>settings</span></li>
+<li><a href='/settings' style={{textDecoration:"none",width:"100%",color:"rgba(121,50,128)"}}><img src={settings} style={{ color:"rgba(121,50,128)",width:"1.5rem",height:"1.5rem"}} /><span>settings</span></a></li>
 
 </ul>
 </nav>
@@ -97,7 +106,7 @@ return (
 <h6>Today is Monday, 20 October 2022</h6>
 </div>
 <div style={{display:"flex",flexGrow:"3",padding:"0 0",textAlign:"center"}}>
-<input type="text" style={{width:"25rem",height:"2rem", borderRadius:"0.9rem"}}/>
+<input type="text" style={{width:"25rem",height:"2rem",border:"none",borderRadius:"0.9rem"}}/>
 <div style={{height:"2.5rem",width:"2.5rem",cursor:"pointer",display:"flex",justifyContent:"center",alignItems:"center",
 backgroundColor:"#F7F5F2",color:"rgba(121,50,128)",borderRadius:"0.5rem"}}>
 
@@ -110,9 +119,6 @@ style={{width:"13rem",cursor:"pointer",height:"2.5rem",
 fontSize:"1.1rem",backgroundColor:"black",borderRadius:"0.5rem",
 marginRight:"1rem", color:"white"}} type="button" > 
 <label htmlFor='filebtn'>Add New Project</label>
-
-
-
 
 </button>
 
@@ -210,16 +216,19 @@ marginRight:"1rem", color:"white"}} type="button" >
 
       
       <div className='item4'>
-  <div><h1>Calander</h1></div>
+        <br/>
+  <div style={{marginLeft:"30px"}}><h3>Calander</h3></div>
       <div className="calander">
 
-        <CalenderBox handleCalander={handleCalander} minusDays={2} todosCalanders={todosCalanders[0]}/>
-        <CalenderBox handleCalander={handleCalander} todosCalanders={todosCalanders[1]} minusDays={1}/>
-        <CalenderBox handleCalander={handleCalander} todosCalanders={todosCalanders[2]}/>
+        <CalenderBox handleCalander={this.handleCalander} minusDays={2} todosCalanders={this.state.todosCalanders[0]}/>
+        <CalenderBox handleCalander={this.handleCalander} todosCalanders={this.state.todosCalanders[1]} minusDays={1}/>
+        <CalenderBox handleCalander={this.handleCalander} todosCalanders={this.state.todosCalanders[2]}/>
       </div>
     </div>
   </div>
+
   )
+}
 }
 
 
@@ -235,10 +244,6 @@ marginRight:"1rem", color:"white"}} type="button" >
 
 
 
-
-
-
-export default DashBoardPage
 /*
 
  <div className='item2'>

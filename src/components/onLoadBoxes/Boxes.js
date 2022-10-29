@@ -21,9 +21,9 @@ const Boxes = ({color="gray",title,title2}) => {
       <MoreVertIcon sx={{marginLeft:"auto",color:'gray'}}/>*/}
 </div>
 <div style={{lineHeight:"1rem"}}>
-<h3 style={{fontWeight:"600",color:"white"}}>{title} </h3>
+<h4 style={{fontWeight:"600",color:"white"}}>{title} </h4>
 <br/>
-<h3 style={{fontWeight:"600",color:"white"}}>{title2}</h3>
+<h4 style={{fontWeight:"600",color:"white"}}>{title2}</h4>
 <br/>
 </div>
 
