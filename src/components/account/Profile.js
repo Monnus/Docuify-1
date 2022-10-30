@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { update } from '../../redux/actions/user';
 import defaultImg from '../../assets/images/defaultUser.png';
 import Loader from '../common/Loader';
+import './profile.css';
 
 @connect((store) => {
   return {
@@ -183,7 +184,7 @@ export default class Profile extends Component {
                 <button type='button' className='btn btn-default margin-left-12' onClick={this.changeState}> Cancel </button>
             </div>)
             }
-            {this.state.readOnly && (<button type='button' className='btn btn-primary' onClick={this.changeState}>
+            {this.state.readOnly && (<button type='button' id='btn-primary' className='btn-primary' onClick={this.changeState}>
               Edit
             </button>)
             }

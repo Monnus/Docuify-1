@@ -4,6 +4,7 @@ import menu from '../../constants/menu';
 import { connect } from 'react-redux';
 import {logOut} from '../../redux/actions/user';
 import Loader from '../common/Loader';
+import './logout.css';
 
 @connect((store) => {
   return {
@@ -36,7 +37,7 @@ export default class LogOut extends Component {
     return (
       <div className='container align-center'>
         <p>Continue to Logout </p>
-        <button type="button" className="btn btn-secondary" onClick={this.logOut}>LogOut</button>
+        <button type="button" id = 'btn-secondary' className="btn-secondary" onClick={this.logOut}>LogOut</button>
       </div>
     );
   }

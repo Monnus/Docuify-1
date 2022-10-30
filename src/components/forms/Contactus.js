@@ -1,9 +1,15 @@
-import React from "react";
+// import React from "react";
+import React, { Component } from 'react';
+import happy_employees from '../../../src/assets/images/Happy-employees.jpeg';
 import './contactus.css';
 
 
-export default class Login extends Component {
+export default class Contact extends Component {
+
+
     render(){
+
+
     return(
         <div>
         <div className='aboutUs'>
@@ -30,7 +36,7 @@ export default class Login extends Component {
     
             <div className='form_table'>
     <div className='check'>
-            <form action="https://formspree.io/f/{form_id}" method="post">
+            <form action="https://formspree.io/f/moqrdybl" method="post">
             <div className='properly'>
            
             </div>

@@ -23,15 +23,15 @@ const Footer = () => (
 
     <h3>SOLUTIONS</h3>
 
-    <ul>
+    <ul style= {{listStyle:'none'}} >
 
       <li>
-        <a href='/'>Document verification </a>
+        <a style= {{textDecoration: 'none'}} href='/'>Docuify for SMME</a>
         </li>
       <li>
-       <a href=''> Document storage</a>
+       <a href=''> Docuify for NPO</a>
         </li>
-      <li>
+      {/* <li>
         <a href=''> Exercise Planning </a>
         </li>
       <li>
@@ -39,16 +39,16 @@ const Footer = () => (
         </li>
       <li>
        <a href=''>  Docuify Wealth</a>
+        </li> */}
+      <li  >
+        <a href=''>Docuify for Indiviuals</a>
         </li>
       <li>
-        <a href=''>Docuify for enterprise</a>
-        </li>
-      <li>
-        <a href=''> Docuify for indiviuals</a>
+        <a href=''> Docuify for Startups</a>
 
       </li>
       <li>
-        <a href=''>Docuify for Startups</a>
+        <a href=''>Docuify for Government</a>
       </li>
 
 
@@ -61,23 +61,23 @@ const Footer = () => (
   <div className='Tools'>
   <h3>TOOLS</h3>
 
-  <ul>
+  <ul style= {{listStyle: 'none'}} >
 
 
 
     <li>
-      <a href=''>Equity Planner</a>
+      <a href=''>Document Verification</a>
     </li>
     <li>
-     <a href=''> AMT Calculator</a>
+     <a href=''> Document Fingerprinting</a>
       </li>
     <li>
-      <a href=''>Stock Option Tax Calculator </a></li>
+      <a href=''> Document Validation </a></li>
 
-    <li>
+    {/* <li>
       <a href=''>Exercise Timing Planner</a>
     </li>
-  
+   */}
   
 
     </ul>
@@ -88,7 +88,7 @@ const Footer = () => (
 
   <h3>LEARN</h3>
 
-  <ul>
+  <ul style= {{listStyle: 'none'}} >
 
 
 
@@ -101,13 +101,15 @@ const Footer = () => (
 
 
     </ul>
+
+
   </div>
 
   <div className='About-Us'>
 
   <h3>ABOUT US</h3>
 
-  <ul>
+  <ul style= {{listStyle: 'none'}} >
 
     <li>
       <a href=''>Our Story</a>
@@ -128,8 +130,8 @@ const Footer = () => (
 
   <div className='icons'>
 
-    <ul>
-      <li className='icon'>
+    <ul style= {{listStyle: 'none'}} >
+      <li style= {{listStyle: 'none'}}  className='icon'>
         <a >
         <img src={twitter} alt='twitter' className='twitter' height={25} width={25}/>
 
@@ -144,7 +146,9 @@ const Footer = () => (
         </a>
       </li>
     </ul>
-  <ul>
+
+
+  <ul style= {{listStyle: 'none'}} >
   <li>
       <a href=''>Privacy Policy</a>
     </li>

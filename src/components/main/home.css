@@ -524,3 +524,79 @@ margin-bottom: 3%;
     font-family: 'Nunito', sans-serif;
 
 }
+
+
+/* --------------------------------SLIDER------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
+.back-color{
+    background-color: rgb(66, 66, 66);
+    background-color: #313236;
+    width: 100%;
+}
+.show{
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+  
+}
+
+.show h6{
+color: white;
+padding-top: 6%;
+font-family: 'Nunito', sans-serif;
+
+
+}
+.show h1{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+    }
+
+
+
+
+.show h1{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: 'Nunito', sans-serif;
+
+    }
+ .Marquee1{
+    width: 100%;
+    color:rgb(184, 179, 179);
+    font-weight: 600;
+    font-size: xx-large;
+    background-color: #313236;
+    width: 100%;
+    display: flex;
+ }
+ .Marquee1 .marq{
+    height: 75vh;
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1100px; */
+    margin: auto;
+    padding: 4rem;
+    margin: 1.5rem;
+    color: black;
+    border: 2px solid #5A5B5E ;
+    /* margin-top: 10%; */
+    font-family: 'Nunito', sans-serif;
+
+ }
+
+ .marq h6{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+ }
+ .marq p{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+
+ }
+

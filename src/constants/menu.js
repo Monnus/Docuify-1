@@ -11,19 +11,24 @@ const publicMenu = {
       label: 'About',
       menu: true
     },
+    plan: {
+      url: '/plan',
+      label: 'Plan',
+      menu: true
+    },
     verify: {
       url: '/verify',
       label: 'Verify',
       menu: true
     },
+    contactus: {
+      url: '/contactus',
+      label: 'Contact us',
+      menu: true
+    },
     login: {
       url: '/login',
       label: 'Login',
-      menu: true
-    },
-    contactus: {
-      url: '/contactus',
-      label: 'Contact Us',
       menu: true
     }
 
