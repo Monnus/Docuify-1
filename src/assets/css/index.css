@@ -7,16 +7,20 @@ body {
 .content{
   padding-bottom: 81px;
 }
-.align-center {
+/* .align-center {
   text-align: center;
   color:f26224;
-}
+} */
+
+
 .header-img {
   width: 100px;
   border-radius: 500px;
   -webkit-border-radius: 500px;
 
 }
+
+
 .header-img1 {
   width: 28px;
   margin-right: 10px;
@@ -33,7 +37,7 @@ body {
 }
 .italic{
  font-style: italic;
- color: #495c74;
+ color: red;
 }
 .width-100{
   width: 100%;
@@ -191,6 +195,7 @@ margin-top: 50px;
 }
 .custom-footer{
   color:#fff;
+  text-decoration: none;
 }
 .custom-product{
   color:#4D5656;
@@ -208,7 +213,8 @@ margin-top: 50px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #3e3e3e;
+  /* background-color: #3e3e3e; */
+  /* background-color: #F7F6F2; */
   
 }
 .responsive {
@@ -236,7 +242,7 @@ margin-top: 50px;
 
   font-size: 18px;
   float: right;
-  text-align: center;
+  /* text-align: center; */
 }
 .bg-verify{
   background-color: #007a1d !important;
@@ -297,3 +303,9 @@ tr:nth-child(even) {
   text-align: center;
   
 }
+a{
+  color: red;
+}
+
+
+

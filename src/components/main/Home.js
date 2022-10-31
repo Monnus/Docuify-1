@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
 import homeImg from '../../assets/images/blockchain.jpg'; 
-// import Typical from 'react-typical';
-// import Marquee from "react-fast-marquee";
-// import BsArrowDownCircle from 'react-icons/bs'
+import Typical from 'react-typical';
+import Marquee from "react-fast-marquee";
+import BsArrowDownCircle from 'react-icons/bs'
 import girl from '../../../src/assets/images/legal-workshop-square-pic-circle-removebg-preview.png';
 import './home.css';
 import miss from '../../../src/assets/images/8ac5c7f468f6a8686d435263efcf994b2a321369-1177x1224.webp';
 import equity from '../../../src/assets/images/d6e7c66584a49398201d2cebfef8c39b5a7a5c47-858x700.webp';
 import man from '../../../src/assets/images/85fc19315ea2838b6faa5d6087a859d00c56498b-1314x1180.webp';
-
 import video from '../../../src/assets/images/1_UINAsA-ZAG8UBYKhENkWiw.gif';
-import Header from '../menu/Header';
-import Footer from '../menu/Footer';
+import {HiOutlineDocument} from 'react-icons/hi';
+import { BiCertification } from 'react-icons/bi';
 
 
 export default class Home extends Component {
@@ -19,24 +18,33 @@ export default class Home extends Component {
     super(props);
   }
     render() {
+
+
+      const steps = [
+        'Docuify', 1000,
+        'Document Verification', 1000,
+        'Blockchain based fingerprint', 1000,
+       
+      ];
+
         return (
-          <div>
-          <Header/>
-          <div className='main'>
+    <div className='main'>
+
+        {/*  */}
         <div className='hero'>
         <div className='content'>
         
-          <div>
-        {/* <Typical wrapper="span" steps={steps} loop={Infinity} className={'caca'} /> */}
+      <div className='auto-type'>
+      <h5> <Typical wrapper="span" steps={steps} loop={Infinity} className={'caca'} /></h5> 
       </div>
       
-      <h1>for our clients</h1>
+      <h1>For our clients</h1>
             <p>
-            Get equity planning, stock option financing, and wealth <br></br>
-            management from advisors that know how stock options <br></br>
-            and equity can help grow your wealth.
+            Get document verification, validation , and digital fingerprinting
+            from our platform that utilises blockchain technology <br></br>
+            to solidify the authenticity of your documents
             </p>
-            <button className='button'>Get started</button>
+            <a href='/login' className='button' >Get started</a>
         </div>
         <div className='img1'>
             <img src={girl} alt='girl' className='girl' height={300}/>
@@ -48,18 +56,20 @@ export default class Home extends Component {
           <p>
             Documents we work with
            </p>
-          {/* <Marquee className='Marquee'>
+          <Marquee className='Marquee'>
           <HiOutlineDocument className='grcert'/><h4>Matric Certificate</h4>
              <BiCertification className='grcert'/><h4>Higher Certificate</h4>
              <HiOutlineDocument className='grcert'/><h4> Diploma Certificate </h4>
              <BiCertification className='grcert'/><h4> Degree Certificate </h4>
              <HiOutlineDocument className='grcert'/><h4>Honours Certificate</h4>
              <BiCertification className='grcert'/><h4>Doctorate Certificate</h4>
-            </Marquee> */}
+            </Marquee>
           </div>
+
+          {/*  */}
           <div className='toppest'>
         <div className='information'>
-            <h4>THE LEADING DOCUMENT VERIFY PLATFORM</h4>
+            <h4>THE LEADING DOCUMENT VERIFICATION PLATFORM</h4>
             <h1>You've got your documents. Now what?</h1>
             <p>see your full demonstartion on how smart contacts automatically execute, control events and the agreement between two parties</p>
         </div>
@@ -74,11 +84,11 @@ export default class Home extends Component {
 
         <div className='divide'>
             <div className='one'>
-            <h5>EQUITY, Tax & IPO PLANNING</h5>
-            <h3>Work with a financial advisor to align <br></br>
-            your stock options with your financial <br></br>goals.
+            <h5>Document Verification</h5>
+            <h3>Work with a blockchain advisor to align
+            your document verificaiton with your enterprise goals.
             </h3>
-            <button className='button4'>Get started</button>
+            <a href='/login' className='button4' >Get started</a>
             <button href='/' className='button3'>Learn more</button>
             </div>
 
@@ -98,12 +108,12 @@ export default class Home extends Component {
 
             </div>
             <div className='one1'>
-            <h5>EXERCISE & LIQUIDITY FINANCING</h5>
-            <h3>Get the cash you need to own your <br></br>
-            equity, or get cash for your private <br></br>shares without selling them.
+            <h5>Validation & Fraud Prevention</h5>
+            <h3>Get your documents validated and temper proof
+             backed by smart contracts
             </h3>
 
-            <button className='button8'>Get started</button>
+            <a href='/login' className='button8'>Get started</a>
 
             <button href='/' className='button7'>Learn more</button>
 
@@ -112,13 +122,13 @@ export default class Home extends Component {
 
         <div className='divide'>
             <div className='one'>
-            <h5>WEALTH MANAGEMENT</h5>
-            <h3>Grow your money through managed <br></br>
-            portfolios and exclusive access to  <br></br>private investments.
+            <h5>Distributed ledger</h5>
+            <h3> your documents are deployed with smart contract
+             upon verificaiton and validation sent to a distributed ledger
             </h3>
 
 
-            <button className='button4'>Get started</button>
+            <a href='/login' className='button4'>Get started</a>
             <button href='/' className='button3'>Learn more</button>
             </div>
 
@@ -133,33 +143,134 @@ export default class Home extends Component {
             <div className='one4'>
             <h6>WHY DOCUIFY</h6>
             <h1>
-            SECURE A FASTER <br></br>AND MORE PARTNERSHIP
+            DIGTIAL VERIFICATION <br></br> & <br></br>DIGTIAL FINGERPRINT
            </h1>
             </div>
 
             <div className='two4'>
-                <h3>We put equity first</h3>
+                <h3>We put your documents first</h3>
                 <p>
-                Our team has deep expertise in equity, tax implications, and how 
-                <br></br>it fits into your financial picture.
+                Our platform has capabilites to verify and validate documents
+                <br></br>it fits into your enterprise picture.
                 </p>
-                <h3>You don’t need millions</h3>
+                <h3>You don’t need to understand smart contracts</h3>
                 <p>
-                We help you make important equity decisions that can set you
-                    <br></br>up for financial success.
+                We help you seal your documents through blockchain technology 
+                    <br></br>through smart contracts for digital finger printing
                 </p>
 
-                <h3>Holistic wealth management</h3>
+                <h3>We store your documents on the blockchain</h3>
                 <p>
-                We take a comprehensive view of all your finances, including <br></br>
-                stock options, to help you save time and money, and grow your <br></br>wealth.
+                 Comprehensive document storage by means of the blockchain  <br></br>
+                nodes and the inter-plantery file system
                 </p>
 
             </div>
         </div>
-    </div>  
+          </div>
+
+            {/* Marquee */}
+
+            <div className='back-color' >
+        <div className='show'>
+            <h6>TESTIMONIALS</h6>
+            <h1>What our clients say</h1>
+        </div>
+
+        <Marquee className='Marquee1'>
+           <div className='marq'>
+           <p> "I realized I’ve been sorely <br></br>needing your advisory services. 
+            So excited to work <br></br>with you."</p>
+            <br></br>
+           <br></br>
+           <br></br>
+           <br></br>        
+           <br></br>
+           <br></br>     
+           <br></br>
+
+           <h6>Senior Engineer</h6>
+           <h6>Gusto</h6>
+           </div>
+
+           <div className='marq'>
+            <p>"What I found most <br></br> comforting was that this <br></br>
+           would allow all our employees, <br></br>not just the executives or <br></br>
+           senior ones, an opportunity to <br></br>have the option to make a <br></br> 
+           major life decision." </p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+
+                <h6>Dan Sinner</h6>
+           <h6>Chief Customer Officer at Happy Money</h6>
+           </div>
+
+           <div className='marq'>
+          <p> "I realized I’ve been sorely <br></br>needing your advisory services. 
+            So excited to work <br></br>with you."</p>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>        
+            <br></br>
+            <br></br>     
+            <br></br>
+   
+              <h6>Senior Engineer</h6>
+           <h6>Gusto</h6>
+           </div>
+
+           <div className='marq'>
+          <p> "Docuify was one of the only <br></br> places I could find that could <br></br>
+           give me accurate calculations <br></br>on AMT."</p>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>        
+           <br></br>
+           <br></br>
+
+           <h6>Amanda</h6>
+           <h6>Early HR employee at pre-IOP startup</h6>
+           </div>
+
+           <div className='marq'>
+          <p> "Docuify felt like the safest <br></br>option. There is upside <br></br>
+           and almost no downside, and I <br></br>might as well play it safe."</p>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>        
+           <br></br>
+           <br></br>
+
+          <h6>Victor</h6>
+           <h6>Engineering leader at a pre-IPO startup</h6>       
+           </div>
+
+           <div className='marq'>
+           <p>"I feel like a small fish in a big <br></br>pond with wealth advisors.<br></br> 
+           Secfi is exactly what I've been <br></br> looking for. You get me. You <br></br>
+           know equity. And you make <br></br>my life easy."</p>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+           <br></br>
+
+          <h6>Emma</h6>
+           <h6>Docuify Wealth client</h6>       
+           </div>
+           </Marquee>
+
+
     </div>
-    <Footer/>
+
+
     </div>
         );
     }

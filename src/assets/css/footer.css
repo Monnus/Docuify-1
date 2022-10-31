@@ -18,6 +18,7 @@
     justify-content: center;
     background-repeat: no-repeat; */
         /* opacity:0.1; */
+      
 }
 .all_rights{
     width: 100%;
@@ -106,6 +107,7 @@
 .Tools a {
     color:#292a2d;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 
 }
 .Tools a:hover {
@@ -223,6 +225,7 @@
 .icons a {
     color:#adb2b7;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
 
 
     
@@ -241,3 +244,4 @@ margin-left: 10%;
     border-bottom: 1px solid#adb2b7;
 
 }
+

@@ -5,6 +5,8 @@ import About from '../main/About';
 import Error from '../main/Error';
 import Verify from '../forms/Verify';
 import Login from '../forms/Login';
+import Contact from '../forms/Contactus';
+import Plan from '../main/Plan';
 import Documents from '../documents/Main';
 import VerifierDocuments from '../documents/Verifier';
 import RequesterDocuments from '../documents/Requester';
@@ -28,8 +30,12 @@ export default class Routes extends Component{
           <Route path={this.props.menu.home.url} exact component={Home} />
           <Route path={this.props.menu.about.url} exact component={About} />
           <Route path={this.props.menu.verify.url} exact component={Verify} />
-          <Route path={this.props.menu.dashboard.url} exact component={Dashboard}/>
-           <Route path={this.props.menu.login.url} exact component={Login} />
+          <Route path={this.props.menu.login.url} exact component={Login} />
+          <Route path={this.props.menu.contactus.url} exact component={Contact} />
+          <Route path={this.props.menu.dashboard.url} exact component={Dashboard} />
+
+          <Route path={this.props.menu.plan.url} exact component={Plan} />
+          {/* <Route path={this.props.menu.dashboard.url} exact component={Dashboard}/> */}
           <AuthRoute path={this.props.menu.documents.url} exact component={Documents} />
           <AuthRoute path={this.props.menu.documentsRequester.url} exact component={RequesterDocuments} />
           <AuthRoute path={this.props.menu.documentsVerifier.url} exact component={VerifierDocuments} />

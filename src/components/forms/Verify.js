@@ -5,8 +5,7 @@ import web3 from '../../constants/web3';
 import Loader from '../common/Loader';
 import {getDocument} from "../../redux/actions/documents";
 import accountsConst from "../../constants/accounts";
-import Header from '../menu/Header';
-import Footer from '../menu/Footer';
+import './verify.css';
 
 @connect((store) => {
   return {
@@ -58,10 +57,6 @@ export default class Verify extends Component {
     if(this.props.user.loading)
       return (<Loader/>);
     return (
-      <div>
-<Header/>
-
-
       <div className='container'>
         <div className='row  align-center'>
           <div className='col-12'>
@@ -93,7 +88,7 @@ export default class Verify extends Component {
         </div>
         <div className='row  align-center'>
           <div className='col-12'>
-            <button type='button' className='btn-verify' onClick={this.verify}>Verify</button>
+            <button type='button' id='btn-verify' className='btn-verify' onClick={this.verify}>Verify</button>
           </div>
         </div>
         {this.state.submitted && this.props.documents.document.valid && (
@@ -131,7 +126,6 @@ export default class Verify extends Component {
             <p className='error-msg'> Invalid document address !!! </p>
           </div>
         )}
-      </div>
       </div>
     );
   }

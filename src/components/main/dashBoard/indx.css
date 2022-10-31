@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400;1,500&display=swap');
 
-html,body{
+/* html,body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,24 +15,24 @@ html,body{
 
 height:100%;
 
-}
+} */
 
 .pageGrid{
     display:grid;
-    position:fixed;
+    /* position:fixed; */
    top:0;
    right:0;
-   bottom:0;
+  
    left:0;
     grid-template-columns:300px 55% auto;
-    gap:30px;
+gap: 20px;
     grid-template-areas: 
 "nav  hd TimeTable "
 "nav main TimeTable"
 "nav main TimeTable";
-min-height:95vh;
+
 padding: 5px;
-width:100%;
+
 
 }
 .table{
@@ -48,14 +48,6 @@ line-height: 1.5rem;
 color:#793280;
 
 
-}
-.grayLine{
-    position: absolute;
-    height: 50rem;
-    width:0.2rem;
-    background:lightgray;
-    top :70px;
-    right:-1rem
 }
 .item1::after{
     content:"";
@@ -102,11 +94,8 @@ margin: 0 0 0 1px;
 
 
 .item3{
-    grid-area: main;
-height: 100%;
-padding: 10px;
+grid-area: main;
  display: flex;
- flex-wrap: wrap;
  color:#793280;
  justify-content: space-around;
 border-radius: 0 0 2rem 0;
@@ -119,25 +108,16 @@ border-radius: 0 0 2rem 0;
     width:20em;
     box-shadow: 2px 2px 5px lightgray;
     border-radius: 1.1rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
-.task-for-today::before{
-    content: "Tasks for today";
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color:#793280;
-    margin-bottom: 1.5rem;
-
-}
 
 .statistics-boxes-container{
     display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
     justify-content: space-between;
-    align-self:end;
-width: 100%;
-    
+
 }
 
 .statistics-boxes{
@@ -162,9 +142,10 @@ width: 100%;
     
 }
 .welcomeBlock{
+    display: flex;
     height:200px;
-    width:100%;
-display: flex;
+    margin-left: 4%;
+    margin-right: 4%;
 justify-content: space-between;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 10px lightgray;
@@ -176,7 +157,7 @@ justify-content: space-between;
 .item4{
     grid-area:TimeTable;
     background: rgba(252,245,235);
- padding-bottom: 20px;
+
     color:#793280
 
 
@@ -184,7 +165,7 @@ justify-content: space-between;
 .calander{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+
     height: 100%;
     padding:1.5rem 0;
 

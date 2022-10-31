@@ -2,7 +2,7 @@
 import React,{useState, useEffect}from 'react'
 // import Navbar from '../../components/navbar/Navbar'
 import {UplaodToBlockchainBoxes} from "../../upload/uplaodload"
-import "./indx.css";
+import "./dashboard.css";
 import IconUser from "../../../assets/imagess/userIconImage.svg";
 import welcomeIMG from "../../../assets/imagess/tourist-welcome.svg";
 import wave from "../../../assets/imagess/wave.svg";
@@ -15,7 +15,7 @@ import search from "../../../assets/images/search-solid.svg"
 import homefrom from "../../../assets/images/home-solid.svg"
 import info  from "../../../assets/images/info-circle-solid.svg"
 
-export default class Dashboard extends React.Component {
+export default class componentName extends React.Component {
 
 constructor(props){
   super(props);
@@ -58,9 +58,9 @@ return (
 
   <div className='pageGrid'>
       <div className='item1' >
-       
       <div style={{textAlign:"center",alignSelf:"center"}}>
 
+  <div className='Icon-Image'></div>
       </div>
                 <div style={{marginTop:"2rem",textAlign:"center"}}>
             <div className="Profile-Image">
@@ -140,7 +140,7 @@ marginRight:"1rem", color:"white"}} type="button" >
     
   <div className='item3'>
         <div className="task-for-today" style={{width:"20rem"}}>
-<h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}> Task for today</h2>
+  {/* task to do*/}
 <div className="listTask">
   <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#FE7541"}}></div>
   <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"5px"}}>
@@ -148,15 +148,12 @@ marginRight:"1rem", color:"white"}} type="button" >
     <br/>
     <h6>Prepare Figma file</h6>
   </div>
- 
+  <div style={{margin:"5px"}}>
+            {/* <Radio value="Hello World" name="radio-buttons" /> */}
+            </div>
 </div>
-
-{/* box 1 */}
-
-
-
-
-
+{/* task to do*/}
+  {/* task to do*/}
   <div className="listTask">
   <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#793280"}}></div>
   <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"5px"}}>
@@ -164,14 +161,10 @@ marginRight:"1rem", color:"white"}} type="button" >
     <br/>
     <h6>Design UX wireframes</h6>
   </div>
-
+  <div style={{margin:"5px"}}>
+            {/* <Radio value="Hello World" name="radio-buttons" /> */}
+            </div>
 </div>
-
-{/* box 2*/}
-
-
-
-
 {/* task to do*/}
   {/* task to do*/}
   <div className="listTask"> 
@@ -181,14 +174,15 @@ marginRight:"1rem", color:"white"}} type="button" >
     <br/>
     <h6>Research</h6>
   </div>
-
+  <div style={{margin:"5px"}}>
+            {/* <Radio value="Hello World" name="radio-buttons" /> */}
+            </div> 
 </div>
 {/* task to do*/}
         </div>
 
-    <div className="Statistics" style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",width:"25rem"}}>
-   <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>
-    Statistics</h2>
+    <div className="Statistics" style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",width:"25rem",padding:"20px 10px 0 10px"}}>
+   <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>Statistics</h2>
   <div className='statistics-boxes-container'>
 <div className='statistics-boxes'>
   <h2>28 h</h2>
@@ -236,83 +230,3 @@ marginRight:"1rem", color:"white"}} type="button" >
   )
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
- <div className='item2'>
-      <div style={{display:"flex",width:"100%",alignItems:"flex-end"}}>
-
-   
-      <div style={{flexGrow:"2",color:"rgba(121,50,128)",fontSize:"1.5rem"}}>
-      <h3>Hello,Sara</h3>
-      <h6>Today is Monday, 20 October 2022</h6>
-      </div>
-      <div style={{display:"flex",flexGrow:"3",padding:"0 0",textAlign:"center"}}>
-        <input type="text" style={{width:"40rem",height:"4rem", borderRadius:"0.9rem"}}/>
-        <SearchIcon fontSize="small"
-      style={{height:"4rem",width:"4rem",cursor:"pointer", backgroundColor:"F7F5F2",color:"rgba(121,50,128)",borderRadius:"0.9rem"}} />
-      
- 
-        <button 
-        style={{width:"15rem",cursor:"pointer",height:"4rem",
-        fontSize:"1.3rem",backgroundColor:"black",borderRadius:"0.5rem",
-        marginRight:"1rem", color:"white"}} type="button" onChange={(e)=>hanleSelectFile(e)}> 
-        <label htmlFor='filebtn'>Add New Project</label>
-        
-        <input id="filebtn" type="file"  style={{color:"rgba(0,0,0,0)"}}/>
-          
-        
-        </button>
-    
-      </div>
-      <div>
-        {/* empty div for space dont remove*
-        </div>
-        </div>
-  
-          {/*  div for boxes
-  
-  <div>
-    <UplaodToBlockchainBoxes/>
-  </div>
-        </div>
-      <div className='item3'>
-        <div style={{}}>
-        <DisplayUplaodTable selectFile={selectFile}/>
-        </div>
-        <div style={{}}>
-        <img src={welcomeIMG} alt=" wecome to dashboard"/>
-        </div>
-      </div>
-  
-      <div className='item4'>
-  <div><h1>Calander</h1></div>
-      <div className="calander">
-        {/* clander divs
-        <CalenderBox handleCalander={handleCalander} minusDays={2}/>
-        <CalenderBox handleCalander={handleCalander} minusDays={1}/>
-        <CalenderBox handleCalander={handleCalander}/>
-   
-      </div>
-      </div>
-
-
-
-
-
-
-
-*/
