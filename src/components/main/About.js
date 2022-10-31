@@ -45,7 +45,7 @@ export default class About extends Component {
 					<br></br>
 					<h1>Hi there, we’re Docuify </h1>
 					<p>We are the company that provides a largest verifying of documents</p>
-					<button href='' className='talk'>Talk with us</button>
+					<button href='/contactus' className='talk'>Talk with us</button>
 				</div>
 				</div>
 
@@ -59,7 +59,7 @@ export default class About extends Component {
 					being tempted or stolen.
 					
 					</h1>
-					<p>Equity is complex, stressful, and takes a back seat to the hard work that goes into building a company. But we got it wrong in the past. And we don’t want you to.</p>
+					<p>Blockchain-based system which can serve as a verification clearinghouse for confidential documents.Eliminate reputational risks for an enterprises or individuals as well as improve trust and transparency</p>
 					
 				</div>
 				<div className='mission-img'>
