@@ -37,6 +37,16 @@ z-index: -1;
     padding: 4rem;
     margin: 1.5rem;
     color: black;
+
+}
+.auto-type h5{
+    margin-bottom: 2%;
+    font-family: 'Nunito', sans-serif;
+    white-space: pre-wrap;
+    letter-spacing: .02cm;
+    font-weight: 100;
+    margin-left: 14%;
+
 }
 .hero h1{
     margin-bottom: 2%;
@@ -64,6 +74,7 @@ z-index: -1;
     margin-top: 2%;
     margin-left: 15%;
     font-family: 'Nunito', sans-serif;
+    text-align: center;
   }
   
   .button:hover{
@@ -77,8 +88,8 @@ z-index: -1;
     letter-spacing: .02cm;
     font-size: xx-large;
     font-weight: 100;
-    margin-left: 15%;
-
+    margin-left: 20%;
+color: red;
   }
   .img1{
 width: 50%;

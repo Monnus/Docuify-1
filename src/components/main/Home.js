@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import homeImg from '../../assets/images/blockchain.jpg'; 
 import Typical from 'react-typical';
 import Marquee from "react-fast-marquee";
-// import BsArrowDownCircle from 'react-icons/bs'
+import BsArrowDownCircle from 'react-icons/bs'
 import girl from '../../../src/assets/images/legal-workshop-square-pic-circle-removebg-preview.png';
 import './home.css';
 import miss from '../../../src/assets/images/8ac5c7f468f6a8686d435263efcf994b2a321369-1177x1224.webp';
@@ -28,14 +28,14 @@ export default class Home extends Component {
       ];
 
         return (
-          <div className='main'>
+    <div className='main'>
 
         {/*  */}
         <div className='hero'>
         <div className='content'>
         
-          <div>
-        <Typical wrapper="span" steps={steps} loop={Infinity} className={'caca'} />
+      <div className='auto-type'>
+      <h5> <Typical wrapper="span" steps={steps} loop={Infinity} className={'caca'} /></h5> 
       </div>
       
       <h1>For our clients</h1>
@@ -44,7 +44,7 @@ export default class Home extends Component {
             from our platform that utilises blockchain technology <br></br>
             to solidify the authenticity of your documents
             </p>
-            <button className='button'>Get started</button>
+            <a href='/login' className='button' >Get started</a>
         </div>
         <div className='img1'>
             <img src={girl} alt='girl' className='girl' height={300}/>
@@ -88,7 +88,7 @@ export default class Home extends Component {
             <h3>Work with a blockchain advisor to align
             your document verificaiton with your enterprise goals.
             </h3>
-            <button className='button4'>Get started</button>
+            <a href='/login' className='button4' >Get started</a>
             <button href='/' className='button3'>Learn more</button>
             </div>
 
@@ -113,7 +113,7 @@ export default class Home extends Component {
              backed by smart contracts
             </h3>
 
-            <button className='button8'>Get started</button>
+            <a href='/login' className='button8'>Get started</a>
 
             <button href='/' className='button7'>Learn more</button>
 
@@ -128,7 +128,7 @@ export default class Home extends Component {
             </h3>
 
 
-            <button className='button4'>Get started</button>
+            <a href='/login' className='button4'>Get started</a>
             <button href='/' className='button3'>Learn more</button>
             </div>
 

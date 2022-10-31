@@ -16,11 +16,13 @@ const publicMenu = {
       label: 'Plan',
       menu: true
     },
+
     verify: {
       url: '/verify',
       label: 'Verify',
       menu: true
     },
+
     contactus: {
       url: '/contactus',
       label: 'Contact us',
@@ -58,6 +60,11 @@ const privateMenu = {
       label: 'Documents Requester',
       menu: false
     },
+    dashboard:{
+      url:'/dashboard',
+      label:'Dashboard',
+      menu:true
+          },
     documentsCreate: {
       url: '/documents/create',
       label: 'Documents Create',
@@ -74,6 +81,11 @@ const privateMenu = {
       url: '/transactions',
       label: 'Transactions',
       menu: true
+    },
+    dashboard:{
+      url:"/dashboard",
+      label:"Dashboard",
+      menu:true
     },
     logout: {
       url: '/logout',

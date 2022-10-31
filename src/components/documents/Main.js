@@ -52,6 +52,7 @@ export default class Main extends Component {
       return (<Redirect to={this.state.url}/>);
     return (
       <div className='container'>
+        <div>hello</div>
         <div className='row align-center'>
           <div className='col-12'>
             <h2 className="custom-h2"> Documents <span className='doc-count'>{this.state.count.total}</span></h2>

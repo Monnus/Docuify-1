@@ -37,7 +37,7 @@ body {
 }
 .italic{
  font-style: italic;
- color: #495c74;
+ color: red;
 }
 .width-100{
   width: 100%;
@@ -303,7 +303,9 @@ tr:nth-child(even) {
   text-align: center;
   
 }
-
+a{
+  color: red;
+}
 
 
 
