@@ -15,7 +15,7 @@ import search from "../../../assets/images/search-solid.svg"
 import homefrom from "../../../assets/images/home-solid.svg"
 import info  from "../../../assets/images/info-circle-solid.svg"
 
-export default class componentName extends React.Component {
+export default class Dashboard extends React.Component {
 
 constructor(props){
   super(props);
