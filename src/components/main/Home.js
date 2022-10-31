@@ -115,7 +115,7 @@ export default class Home extends Component {
 
             <a href='/login' className='button8'>Get started</a>
 
-            <button href='/' className='button7'>Learn more</button>
+            <a href='/' className='button7'>Learn more</a>
 
             </div>
         </div>
