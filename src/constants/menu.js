@@ -28,9 +28,14 @@ const publicMenu = {
       label: 'Contact us',
       menu: true
     },
+    learn:{
+      url:"/learn",
+      label:"Learn",
+      menu:true
+    },
     login: {
       url: '/login',
-      label: 'Login',
+      label: 'Login', 
       menu: true
     }
 

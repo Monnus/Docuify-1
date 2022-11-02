@@ -2,7 +2,7 @@
 import React,{useState, useEffect}from 'react'
 // import Navbar from '../../components/navbar/Navbar'
 import {UplaodToBlockchainBoxes} from "../../upload/uplaodload"
-import "./indx.css";
+import './dashboard.css'
 import IconUser from "../../../assets/imagess/userIconImage.svg";
 import welcomeIMG from "../../../assets/imagess/tourist-welcome.svg";
 import wave from "../../../assets/imagess/wave.svg";
@@ -140,7 +140,9 @@ marginRight:"1rem", color:"white"}} type="button" >
     
   <div className='item3'>
         <div className="task-for-today" style={{width:"20rem"}}>
-<h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}> Task for today</h2>
+<h2
+ style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}> 
+ Task for today</h2>
 <div className="listTask">
   <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#FE7541"}}></div>
   <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"5px"}}>
