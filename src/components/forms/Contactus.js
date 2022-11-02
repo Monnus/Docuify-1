@@ -36,13 +36,75 @@ export default class Contact extends Component {
     
             <div className='form_table'>
     <div className='check'>
+            <form action="https://formspree.io/f/moqrdybl" method="post"
+             style={{display:"flex",flexDirection:"column",lineHeight:"1rem",alignItems:"center"}}>
+              <div>
+
+              <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}}>Full Name</label><br/>
+              <input placeholder='Full Name' style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+
+              </div>
+<br/>
+<div>
+              <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}}>E-mail</label><br></br>
+              <input placeholder='E-mail'style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+
+</div>
+              <br/>
+<div>
+
+            <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}} className='Label'>Phone</label><br></br>
+              <input className='Placeholder' placeholder='Phone' style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+</div>
+              <br/>
+      <div>
+
+              <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}} className='job'>Job Title</label><br/>
+              <input className='Input' placeholder='Job Title' style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+      </div>
+<br/>
+              <div>
+
+              <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}} className='job'>Company</label><br></br>
+              <input className='Input'  placeholder='Company' style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+              </div>
+              <br/>
+        <div>
+
+            <label style={{color:"white",fontSize:"1rem",fontWeight:"500",}} className='Label'>Message</label><br></br>
+              <input className='type' placeholder='Type your message...' style={{width:"30rem",borderRadius:"10px",height:"3rem"}}/>
+        </div>
+
+            <button className='send' type="submit">Send message</button>
+         
+    
+            
+          </form>
+            </div>
+            
+        </div>
+        </div>
+        </div>
+    )
+}
+}
+
+/*
+
+<div className='form_heading'>
+              <h1>What can we <br></br> help you with?</h1>
+    
+            </div>
+    
+            <div className='form_table'>
+    <div className='check'>
             <form action="https://formspree.io/f/moqrdybl" method="post">
             <div className='properly'>
            
             </div>
             
             <div>
-            <div className='double-imp'>
+            <div className='double-imp' style={{display:"flex",flexDirection:"column"}}>
               <div>
               <label>Full Name</label><br/>
               <input placeholder='Full Name'/>
@@ -77,7 +139,5 @@ export default class Contact extends Component {
             
         </div>
         </div>
-        </div>
-    )
-}
-}
+
+*/

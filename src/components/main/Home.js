@@ -196,8 +196,8 @@ export default class Home extends Component {
            <div className='marq'>
             <p>"What I found most <br></br> comforting was that this <br></br>
            would allow all our employees, <br></br>not just the executives or <br></br>
-           senior ones, an opportunity to <br></br>have the option to make a <br></br> 
-           major life decision." </p>
+           senior ones, an opportunity to <br></br>have the option to  digitally fingerprint <br></br> 
+           important business documentation" </p>
             <br></br>
             <br></br>
             <br></br>
@@ -209,7 +209,7 @@ export default class Home extends Component {
 
            <div className='marq'>
           <p> "I realized I’ve been sorely <br></br>needing your advisory services. 
-            So excited to work <br></br>with you."</p>
+            to validate and authenticate my documents  <br></br>with your technology."</p>
             <br></br>
             <br></br>
             <br></br>
@@ -224,7 +224,7 @@ export default class Home extends Component {
 
            <div className='marq'>
           <p> "Docuify was one of the only <br></br> places I could find that could <br></br>
-           give me accurate calculations <br></br>on AMT."</p>
+           validate my certificate <br></br>on using smart contracts."</p>
            <br></br>
            <br></br>
            <br></br>
@@ -249,7 +249,7 @@ export default class Home extends Component {
            <br></br>
 
           <h6>Victor</h6>
-           <h6>Engineering leader at a pre-IPO startup</h6>       
+           <h6>Leading University Admin</h6>       
            </div>
 
            <div className='marq'>
@@ -263,7 +263,7 @@ export default class Home extends Component {
            <br></br>
 
           <h6>Emma</h6>
-           <h6>Docuify Wealth client</h6>       
+           <h6>Docuify client</h6>       
            </div>
            </Marquee>
 

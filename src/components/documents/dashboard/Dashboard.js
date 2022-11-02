@@ -3,17 +3,17 @@ import React,{useState, useEffect}from 'react'
 // import Navbar from '../../components/navbar/Navbar'
 import {UplaodToBlockchainBoxes} from "../../upload/uplaodload"
 import "./dashboard.css";
-import IconUser from "../../../assets/imagess/userIconImage.svg";
-import welcomeIMG from "../../../assets/imagess/tourist-welcome.svg";
-import wave from "../../../assets/imagess/wave.svg";
-import CalenderBox from "../../calander/calenderBox";
-import contactUs from "../../../assets/images/address-card-solid.svg";
-import verify from "../../../assets/images/certificate-solid.svg";
-import profile from "../../../assets/images/user-solid.svg";
-import settings from "../../../assets/images/cog-solid.svg";
-import search from "../../../assets/images/search-solid.svg"
-import homefrom from "../../../assets/images/home-solid.svg"
-import info  from "../../../assets/images/info-circle-solid.svg"
+// import IconUser from "../../../assets/imagess/userIconImage.svg";
+// import welcomeIMG from "../../../assets/imagess/tourist-welcome.svg";
+// import wave from "../../../assets/imagess/wave.svg";
+// import CalenderBox from "../../calander/calenderBox";
+// import contactUs from "../../../assets/images/address-card-solid.svg";
+// import verify from "../../assets/images/certificate-solid.svg";
+// import profile from "../../../assets/images/user-solid.svg";
+// import settings from "../../../assets/images/cog-solid.svg";
+// import search from "../../../assets/images/search-solid.svg";
+// import homefrom from "../../../assets/images/home-solid.svg";
+// import info  from "../../../assets/images/info-circle-solid.svg";
 
 export default class componentName extends React.Component {
 

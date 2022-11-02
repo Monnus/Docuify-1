@@ -16,6 +16,7 @@ import Transactions from '../account/Transactions';
 import Profile from '../account/Profile';
 import AuthRoute from '../../utils/AuthRoute';
 import Dashboard from "../main/dashBoard/dashboard"
+import Learn from '../main/Instruction';
 export default class Routes extends Component{
 
   constructor(props) {
@@ -35,7 +36,7 @@ export default class Routes extends Component{
           <Route path={this.props.menu.dashboard.url} exact component={Dashboard} />
 
           <Route path={this.props.menu.plan.url} exact component={Plan} />
-          {/* <Route path={this.props.menu.dashboard.url} exact component={Dashboard}/> */}
+          <Route path={this.props.menu.learn.url} exact component={Learn} />
           <AuthRoute path={this.props.menu.documents.url} exact component={Documents} />
           <AuthRoute path={this.props.menu.documentsRequester.url} exact component={RequesterDocuments} />
           <AuthRoute path={this.props.menu.documentsVerifier.url} exact component={VerifierDocuments} />
