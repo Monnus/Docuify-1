@@ -89,15 +89,15 @@ const WelcomeCard=()=>{
         
     )
 };
-const UplaodToBlockchainBoxes=()=>{
-
+const UplaodToBlockchainBoxes=({count,countPer})=>{
+const [pending,setpending]=useState(0)
   return(
 
     <div style={{display:"flex",flexDirection:"row",
  justifyContent:"auto",flexWrap:"wrap",}}>
-        <Boxes color={"#793280"} title={"Web"} title2={"Development"}/>
-        <Boxes color={"#83D0D6"} title={"Mobile App"} title2={"Design"}/>
-        <Boxes color={"#FE7541"} title={"Facebook"} title2={"Brand UI Kit"}/>
+        <Boxes progressCount={countPer.verified} couuntDocs={count.verified} color={"#793280"} title={"Verified"} title2={"Documents"}/>
+        <Boxes progressCount={countPer.rejected} couuntDocs={count.rejected} color={"#83D0D6"} title={"Rejected"} title2={"Documents"}/>
+        <Boxes progressCount={countPer.pending} couuntDocs={count.total-(count.rejected+count.verified)} color={"#FE7541"} title={"Pending"} title2={"Documents"}/>
     </div>
 
     )

@@ -19,7 +19,7 @@ export default class Verifier extends Component {
     this.state = {
       getStatusLabel: accountsConst.getStatusLabel,
       redirect: false,
-      documents: menu.documents,
+      documents: menu.document,
       url: '',
       isVerifier: props.user.details.type === 0
     };
@@ -29,8 +29,7 @@ export default class Verifier extends Component {
       account: this.props.user.details.account,
       total: this.props.user.count.total
     }));
-    if (!this.state.isVerifier)
-      this.back();
+  
   }
 
   verifyDoc = (docAddress, status) => {
@@ -39,35 +38,34 @@ export default class Verifier extends Component {
       docAddress: docAddress,
       status: status
     }));
-    this.back();
+
   };
-  back = () =>{
-    this.setState({redirect: true, url: this.state.documents.list});
-  };
+
   render() {
     if(this.props.documents.loading)
       return (<Loader />);
     if(this.state.redirect)
       return (<Redirect to={this.state.url}/>);
     return (
-      <div className='container'>
+      <div className=''>
         <div className='row align-center'>
           <div className='col-12'>
-            <table className="table table-hover">
+            <table className="" style={{ borderCollapse: "collapse",borderRadius:"10px"}}>
               <thead>
-              <tr>
-                <th className="custom-t">Name</th>
-                <th className="custom-t">Description</th>
-                <th className="custom-t">Status</th>
-                <th> </th>
+              <tr style={{background:"#793280",borderRadius:"10px"}}>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#793280"}}>Name</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#793280"}}>Description</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#793280"}}>Status</th>
+                <th  className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#793280"}}> </th>
               </tr>
               </thead>
               <tbody>
               {
                 this.props.documents.verifierDocs.map((doc, index)=>{
                   let statusLabel = this.state.getStatusLabel(doc.status).label;
+                  if(index%2==0){
                   return (
-                    <tr key={index}>
+                    <tr key={index} style={{backgroundColor:"#793280",color:"white"}}>
                       <td>{doc.name}</td>
                       <td>{doc.description}</td>
                       <td className={statusLabel}>{statusLabel}</td>
@@ -89,7 +87,32 @@ export default class Verifier extends Component {
                         </div>
                       </td>
                     </tr>
-                  );
+                    );
+                    }
+                    return(
+                      <tr key={index} >
+                      <td>{doc.name}</td>
+                      <td>{doc.description}</td>
+                      <td className={statusLabel}>{statusLabel}</td>
+                      <td align="center">
+                        <div className="dropdown">
+                          <a className="nav-link dropdown-toggle" href="#" role="button" id="link1" data-toggle="dropdown"
+                             aria-haspopup="true" aria-expanded="false">
+                            <span className="far fa-cog"> Actions </span>
+                          </a>
+                          <div className="dropdown-menu" aria-labelledby="link1">
+                            <a className='dropdown-item' href={doc.link} target='_blank'> View </a>
+                            {doc.status === 0 && (
+                              <div>
+                                <span className="dropdown-item Rejected pointer" onClick={() => this.verifyDoc(doc.docAddress, 2)}>Reject</span>
+                                <span className="dropdown-item Verified pointer" onClick={() => this.verifyDoc(doc.docAddress, 1)}>Verify</span>
+                              </div>
+                              )}
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    )
                 })
               }
               </tbody>
