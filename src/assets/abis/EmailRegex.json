@@ -28332,13 +28332,13 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
-    "1668022555530": {
+    "1668103789542": {
       "events": {},
       "links": {},
-      "address": "0x7a2e46f21d77e9a6c6449e11d33a29b8d1afda51",
-      "transactionHash": "0x2583e5fdb08cd5437284f8c3fc5d595ca07e076ee8ff6f1d8d4530703ac125ef"
+      "address": "0xd361c92f29389da57a6a807d64ae0c10721abffa",
+      "transactionHash": "0x41d4dc0417590c8052cc46f725d70fbc60ca29eac6bd1bedae3f88c2dfed9262"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2022-11-09T19:37:46.815Z"
+  "updatedAt": "2022-11-10T18:11:38.674Z"
 }

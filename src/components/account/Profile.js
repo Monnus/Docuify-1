@@ -51,6 +51,7 @@ export default class Profile extends Component {
     const value = e.target.value;
     this.setState({
       [e.target.name]: value
+
     });
     if(value === '1'){
       this.setState({price0: true, price: 0})
@@ -73,7 +74,8 @@ export default class Profile extends Component {
       };
       this.props.dispatch(update(payload));
       this.setState({readOnly: true});
-    }
+    };
+    
   };
   emailError = () =>{
     if(this.state.submitted && !this.state.email)

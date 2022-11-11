@@ -42,8 +42,11 @@ export function logOut() {
       });
   }
 }
-
+export function getProfileDetails(object){
+return object;
+}
 export function update(payload) {
+  getProfileDetails(payload)
   return function(dispatch) {
     dispatch({type: userType.update});
     let ipfsHash;

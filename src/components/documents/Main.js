@@ -17,7 +17,7 @@ import welcomeIMG from "../../assets/imagess/tourist-welcome.svg";
 import wave from "../../assets/imagess/wave.svg";
 import search from "../../assets/images/search-solid.svg";
 import Verifier from './Verifier';
-
+import Requester from "./Requester"
 
 @connect((store) => {
   console.log("tdfkghkck",store);
@@ -38,7 +38,7 @@ export default class Main extends Component {
         pending: count.pending
       },
       details:props.user.description,
-      display:"",
+      display:"Request",
       count: props.user.count,
       isRequester: props.user.details.type === 1,
       isVerifier: props.user.details.type === 0,
@@ -138,27 +138,34 @@ marginRight:"1rem", color:"white"}} type="button" >
   </div>
     
   <div className='item3'>
-        <div className="task-for-today" style={{marginTop:"6px",marginRight:"2px"}}>
-<table className='container'>
+        <div className="task-for-today container" style={{marginTop:"6px",width:"auto",marginRight:"2px",background:"linear-gradient(to right,#4FD77F)"}}>
+          <h3 style={{color:"white",width:"auto",background:"#004C6E",padding:"5px",fontWeight:"600"}}> Documents </h3>
+<table className='container' style={{backgroundColor:"#f5f5f5"}}>
   <thead>
 <tr>
-  <th>Name</th>
+  <th style={{fontSize:"20px",fontWeight:"600"}}>Name</th>
 </tr>
   </thead>
   <tbody>
-      <td>
-        <tr>{this.state.details}</tr>
-      </td>
+        {/* get Doc names from profile page*/}
+        <tr>
+          <td>
+          {this.state.details}
+          </td>
+        </tr>
+    
   </tbody>
 </table>
         </div>
 
-    <div className="Statistics" style={{display:"flex",backgroundColor:"#f5f5f5",marginTop:"10px",
-    minHeight:"10rem",maxHeight:"100%",height:"10rem",flexDirection:"column",width:"80%",padding:"5px",overflow:"hidden"}}>
+    <div className="Statistics container" style={{display:"flex",backgroundColor:"#f5f5f5",marginTop:"10px",
+    minHeight:"10rem",maxHeight:"100%",flexDirection:"column",width:"80%",padding:"5px",overflow:"hidden",borderRadius:"0 0 2rem 0",opacity:"4"}}>
 
       
       {/* put if condition here for render Requester side the  verifyer side*/}
-      <Verifier/>
+
+      {this.state.display==="Request"?<Requester/>:<Verifier/> }
+
         </div>
         
         

@@ -50,7 +50,7 @@ export default class Verifier extends Component {
       <div className=''>
         <div className='row align-center'>
           <div className='col-12'>
-            <table className="" style={{ borderCollapse: "collapse",borderRadius:"10px"}}>
+            <table className="table table-hover" style={{ borderCollapse: "collapse",borderRadius:"10px"}}>
               <thead>
               <tr style={{background:"#793280",borderRadius:"10px"}}>
                 <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#793280"}}>Name</th>

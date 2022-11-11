@@ -20,7 +20,7 @@ export default class Requester extends Component {
     this.state = {
       getStatusLabel: accountsConst.getStatusLabel,
       redirect: false,
-      documents: menu.documents,
+      documents: menu.document,
       isRequester: props.user.details.type === 1,
       url: ''
     };
@@ -36,20 +36,18 @@ export default class Requester extends Component {
   render() {
     if(this.props.documents.loading)
       return (<Loader />);
-    if(this.state.redirect)
-      return (<Redirect to={this.state.url}/>);
     return (
       <div className='container'>
         <div className='row align-center'>
           <div className='col-12'>
-            <table className="table table-hover">
+            <table className="table table-hover" style={{ borderCollapse: "collapse",borderRadius:"10px"}}>
               <thead>
-              <tr>
-                <th className="custom-t">Name</th>
-                <th className="custom-t">Description</th>
-                <th className="custom-t">Address</th>
-                <th className="custom-t">Status</th>
-                <th className="custom-t">View</th>
+              <tr  style={{background:"#F75318",borderRadius:"10px"}}>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#F75318"}}>Name</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#F75318"}}>Description</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#F75318"}}>Address</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#F75318"}}>Status</th>
+                <th className="custom-t" style={{color:"white",fontSize:"20px",fontWeight:"600",borderColor:"#F75318"}}>View</th>
               </tr>
               </thead>
               <tbody>
