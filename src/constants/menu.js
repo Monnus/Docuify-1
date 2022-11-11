@@ -6,11 +6,6 @@ const publicMenu = {
       label: 'Home',
       menu: true
     },
-    documents: {
-      url: '/documents',
-      label: 'Documents',
-      menu: true
-    },
     about: {
       url: '/about',
       label: 'About',
@@ -42,25 +37,8 @@ const publicMenu = {
       url: '/login',
       label: 'Login', 
       menu: true
-    },
-    dropDown: {
-      profile: {
-        url: '/profile',
-        label: 'Profile',
-        menu: true
-      },
-      transactions: {
-        url: '/transactions',
-        label: 'Transactions',
-        menu: true
-      },
-  
-      logout: {
-        url: '/logout',
-        label: 'Log Out',
-        menu: true
-      }
     }
+
   },
   dropDown:{}
 };
@@ -70,6 +48,11 @@ const privateMenu = {
     home: {
       url: '/home',
       label: 'Home',
+      menu: true
+    },
+    documents: {
+      url: '/documents',
+      label: 'Documents',
       menu: true
     },
     documentsVerifier: {
@@ -104,7 +87,6 @@ const privateMenu = {
       label: 'Transactions',
       menu: true
     },
-
     logout: {
       url: '/logout',
       label: 'Log Out',
@@ -119,12 +101,11 @@ export default {
   public: publicMenu,
   routes: routes,
   home: publicMenu.list.home,
-  document:publicMenu.list.documents,
   contactus:publicMenu.list.contactus,
-  // documents: {
-  //   list: privateMenu.list.documents.url,
-  //   create: privateMenu.list.documentsCreate.url,
-  //   verifier: privateMenu.list.documentsVerifier.url,
-  //   requester: privateMenu.list.documentsRequester.url
-  // }
+  documents: {
+    list: privateMenu.list.documents.url,
+    create: privateMenu.list.documentsCreate.url,
+    verifier: privateMenu.list.documentsVerifier.url,
+    requester: privateMenu.list.documentsRequester.url
+  }
 }

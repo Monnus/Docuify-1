@@ -32,10 +32,9 @@ export default class Routes extends Component{
           <Route path={this.props.menu.verify.url} exact component={Verify} />
           <Route path={this.props.menu.login.url} exact component={Login} />
           <Route path={this.props.menu.contactus.url} exact component={Contact} />
-
           <Route path={this.props.menu.plan.url} exact component={Plan} />
           <Route path={this.props.menu.learn.url} exact component={Learn} />
-          <Route path={this.props.menu.documents.url} exact component={Documents} />
+          <AuthRoute path={this.props.menu.documents.url} exact component={Documents} />
           <AuthRoute path={this.props.menu.documentsRequester.url} exact component={RequesterDocuments} />
           <AuthRoute path={this.props.menu.documentsVerifier.url} exact component={VerifierDocuments} />
           <AuthRoute path={this.props.menu.documentsCreate.url} exact component={CreateDocuments} />
