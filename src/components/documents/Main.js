@@ -30,7 +30,7 @@ export default class Main extends Component {
     super(props);
     const count = calcPercentage(props.user.count);
     this.state = {
-      documents: menu.document,
+      documents: menu.documents,
       url: '',
       countPer: {
         rejected: count.rejected,

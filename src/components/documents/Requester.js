@@ -20,7 +20,7 @@ export default class Requester extends Component {
     this.state = {
       getStatusLabel: accountsConst.getStatusLabel,
       redirect: false,
-      documents: menu.document,
+      documents: menu.documents,
       isRequester: props.user.details.type === 1,
       url: ''
     };

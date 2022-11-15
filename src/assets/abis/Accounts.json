@@ -8448,15 +8448,15 @@
     "version": "0.4.24+commit.e67f0147.Emscripten.clang"
   },
   "networks": {
-    "1668103789542": {
+    "1668509620730": {
       "events": {},
       "links": {
-        "EmailRegex": "0xd361c92f29389da57a6a807d64ae0c10721abffa"
+        "EmailRegex": "0x4721345588de08972f290a7355f41ac3155ba612"
       },
-      "address": "0x920e318eee44266ec20c3e32fd9c05358b4a5ce7",
-      "transactionHash": "0x092e72e49fc4677b6eebc734133077a2723058cca2f3d3b321da2b5dc00a0440"
+      "address": "0x04aadc1da76d1573f972f394eb14b114bb689233",
+      "transactionHash": "0x611871abbb6de914c814b7d47cda09b57859544c63ce3ff260eb4db123e446a9"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2022-11-10T18:11:39.318Z"
+  "updatedAt": "2022-11-15T10:57:14.672Z"
 }
