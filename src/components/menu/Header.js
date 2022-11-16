@@ -56,7 +56,7 @@ class Header extends Component {
                         <img src={logo} className ='Logo-img' alt='logo'  />
               </a>
               <div className='collapse navbar-collapse'>
-                <ul className='navbar-nav mr-auto' >
+                <ul className='navbar-nav mr-auto' style={{display: 'flex', flexDirection: 'column'}}>
                   {
                     Object.keys(this.menu.list).map((item) => {
                       return (

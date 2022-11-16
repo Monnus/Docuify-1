@@ -1,0 +1,38 @@
+#mainContainer {
+  /* background-color: aqua; */
+  height: 100%;
+  width: 100%;
+  padding: 16px;
+}
+#sideMenu {
+  background-color: red;
+  width: 200px;
+  height: 100%;
+}
+.mainContent {
+  background: "green";
+  flex: 4;
+  height: "100%";
+  display: flex;
+  flex-direction: column;
+}
+.analytics {
+    flex: 2;
+    width: 100%;
+    background-color: antiquewhite;
+    height: 250px;
+}
+.mainTable {
+    flex: 4;
+    width: 100%;
+}
+table {
+     border-collapse: "collapse";
+     border-radius:10px;
+     /* height: 200px; */
+     /* background-color: olive; */
+     width: 50%;
+}
+table td {
+    /* height: 10px; */
+}

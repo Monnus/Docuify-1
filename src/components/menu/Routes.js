@@ -21,7 +21,7 @@ export default class Routes extends Component{
   constructor(props) {
     super(props);
   }
-// update goes to hostBranch
+
   render () {
     return (
       <div className='content'>
@@ -34,7 +34,7 @@ export default class Routes extends Component{
           <Route path={this.props.menu.contactus.url} exact component={Contact} />
           <Route path={this.props.menu.plan.url} exact component={Plan} />
           <Route path={this.props.menu.learn.url} exact component={Learn} />
-          <AuthRoute path={this.props.menu.documents.url} exact component={Documents} />
+          <Route path={this.props.menu.documents.url} exact component={Documents} />
           <AuthRoute path={this.props.menu.documentsRequester.url} exact component={RequesterDocuments} />
           <AuthRoute path={this.props.menu.documentsVerifier.url} exact component={VerifierDocuments} />
           <AuthRoute path={this.props.menu.documentsCreate.url} exact component={CreateDocuments} />

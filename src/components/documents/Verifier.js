@@ -19,7 +19,7 @@ export default class Verifier extends Component {
     this.state = {
       getStatusLabel: accountsConst.getStatusLabel,
       redirect: false,
-      documents: menu.document,
+      documents: menu.documents,
       url: '',
       isVerifier: props.user.details.type === 0
     };

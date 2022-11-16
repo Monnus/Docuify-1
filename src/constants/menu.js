@@ -11,6 +11,11 @@ const publicMenu = {
       label: 'About',
       menu: true
     },
+       documents: {
+      url: '/documents',
+      label: 'Documents',
+      menu: true
+    },
     plan: {
       url: '/plan',
       label: 'Plan',
@@ -50,11 +55,7 @@ const privateMenu = {
       label: 'Home',
       menu: true
     },
-    documents: {
-      url: '/documents',
-      label: 'Documents',
-      menu: true
-    },
+ 
     documentsVerifier: {
       url: '/documents/verifier',
       label: 'Documents Verifier',
@@ -102,8 +103,9 @@ export default {
   routes: routes,
   home: publicMenu.list.home,
   contactus:publicMenu.list.contactus,
+  list: publicMenu.list.documents.url,
   documents: {
-    list: privateMenu.list.documents.url,
+    // list: privateMenu.list.documents.url,
     create: privateMenu.list.documentsCreate.url,
     verifier: privateMenu.list.documentsVerifier.url,
     requester: privateMenu.list.documentsRequester.url
