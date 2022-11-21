@@ -9,7 +9,7 @@ you need  to install the above, on your machines. In order to run and work with 
 
 
 =========================open project and run the following commands==========================
-# install ganache and truffle
+# install ganache and truffle, Note::skip this command if ganache and truffle are already installed
   $ npm install -g ganache-cli truffle@v4.1.14
   # open a new terminal, run below command and keep it alive/active or running
   $ ganache-cli
@@ -19,5 +19,7 @@ you need  to install the above, on your machines. In order to run and work with 
   $ npm install
   # before starting the project  delete the ".\src\assets\abis" folder, do this for every time you start up the project
   $ truffle compile
+  # after truffle compile
+  $ truffle migrate
   # once compile is complete run react app
-  $ npm run start
+  $ npm  start
